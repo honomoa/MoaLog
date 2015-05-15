@@ -2,7 +2,8 @@ var colors = require('colors'),
         fs = require('fs'),
       util = require('util');
 
-module.exports = new MoaLog();
+module.exports = MoaLog;
+
 function MoaLog(){
   this.level = MoaLog.LEVEL_DEBUG;
 }
