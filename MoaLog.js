@@ -22,7 +22,7 @@ MoaLog.prototype.debug = function(msg){
 }
 MoaLog.prototype.info = function(msg){
   if(this.level >= MoaLog.LEVEL_INFO){
-    this.console('info', msg);
+    this.console('info'.cyan, msg);
   }
 }
 MoaLog.prototype.warn = function(msg){
@@ -32,12 +32,12 @@ MoaLog.prototype.warn = function(msg){
 }
 MoaLog.prototype.error = function(msg){
   if(this.level >= MoaLog.LEVEL_ERROR){
-    this.console('error'.red, msg);
+    this.console('error'.magenta, msg);
   }
 }
 MoaLog.prototype.crit = function(msg){
   if(this.level >= MoaLog.LEVEL_CRIT){
-    this.console('crit'.inverse, msg);
+    this.console('crit'.red, msg);
   }
 }
 MoaLog.prototype.console = function(type, msg){
