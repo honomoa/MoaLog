@@ -1,4 +1,4 @@
-var colors = require('colors'),
+var colors = require('colors').enabled = true,
         fs = require('fs'),
       util = require('util');
 
