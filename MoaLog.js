@@ -18,7 +18,7 @@ MoaLog.prototype.setLevel = function(level){
 }
 MoaLog.prototype.all = function(){
   if(this.level <= MoaLog.LEVEL_ALL){
-    console.log.apply(this, Array.prototype.concat('all'.grey, Array.prototype.slice.call(arguments, 0)));
+    console.log.apply(this, Array.prototype.concat('  all'.grey, Array.prototype.slice.call(arguments, 0)));
   }
 }
 MoaLog.prototype.debug = function(){
@@ -28,12 +28,12 @@ MoaLog.prototype.debug = function(){
 }
 MoaLog.prototype.info = function(){
   if(this.level <= MoaLog.LEVEL_INFO){
-    console.log.apply(this, Array.prototype.concat('info'.cyan, Array.prototype.slice.call(arguments, 0)));
+    console.log.apply(this, Array.prototype.concat(' info'.cyan, Array.prototype.slice.call(arguments, 0)));
   }
 }
 MoaLog.prototype.warn = function(){
   if(this.level <= MoaLog.LEVEL_WARN){
-    console.log.apply(this, Array.prototype.concat('warn'.yellow, Array.prototype.slice.call(arguments, 0)));
+    console.log.apply(this, Array.prototype.concat(' warn'.yellow, Array.prototype.slice.call(arguments, 0)));
   }
 }
 MoaLog.prototype.error = function(){
@@ -43,7 +43,7 @@ MoaLog.prototype.error = function(){
 }
 MoaLog.prototype.crit = function(){
   if(this.level <= MoaLog.LEVEL_CRIT){
-    console.log.apply(this, Array.prototype.concat('crit'.red, Array.prototype.slice.call(arguments, 0)));
+    console.log.apply(this, Array.prototype.concat(' crit'.red, Array.prototype.slice.call(arguments, 0)));
   }
 }
 MoaLog.prototype.console = function(type){
