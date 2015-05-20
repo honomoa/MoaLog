@@ -7,6 +7,7 @@ module.exports = MoaLog;
 function MoaLog(){
   this.level = MoaLog.LEVEL_DEBUG;
 }
+MoaLog.LEVEL_ALL = 0;
 MoaLog.LEVEL_DEBUG = 1;
 MoaLog.LEVEL_INFO = 2;
 MoaLog.LEVEL_WARN = 3;
@@ -14,6 +15,16 @@ MoaLog.LEVEL_ERROR = 4;
 MoaLog.LEVEL_CRIT = 5;
 MoaLog.prototype.setLevel = function(level){
   this.level = level;
+}
+MoaLog.prototype.all = function(type){
+  if(this.level <= MoaLog.LEVEL_ALL){
+    if(arguments.length==1){
+      console.log('all', arguments[0]);
+    }
+    else{
+      console.log(type, arguments[1]);
+    }
+  }
 }
 MoaLog.prototype.debug = function(type){
   if(this.level <= MoaLog.LEVEL_DEBUG){
