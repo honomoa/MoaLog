@@ -16,7 +16,7 @@ MoaLog.prototype.setLevel = function(level){
   this.level = level;
 }
 MoaLog.prototype.debug = function(type){
-  if(this.level >= MoaLog.LEVEL_DEBUG){
+  if(this.level <= MoaLog.LEVEL_DEBUG){
     if(arguments.length==1){
       console.log('debug'.grey, arguments[0]);
     }
@@ -26,7 +26,7 @@ MoaLog.prototype.debug = function(type){
   }
 }
 MoaLog.prototype.info = function(type){
-  if(this.level >= MoaLog.LEVEL_INFO){
+  if(this.level <= MoaLog.LEVEL_INFO){
     if(arguments.length==1){
       console.log('info'.cyan, arguments[0]);
     }
@@ -36,7 +36,7 @@ MoaLog.prototype.info = function(type){
   }
 }
 MoaLog.prototype.warn = function(type){
-  if(this.level >= MoaLog.LEVEL_WARN){
+  if(this.level <= MoaLog.LEVEL_WARN){
     if(arguments.length==1){
       console.log('warn'.yellow, arguments[0]);
     }
@@ -46,7 +46,7 @@ MoaLog.prototype.warn = function(type){
   }
 }
 MoaLog.prototype.error = function(type){
-  if(this.level >= MoaLog.LEVEL_ERROR){
+  if(this.level <= MoaLog.LEVEL_ERROR){
     if(arguments.length==1){
       console.log('yellow'.magenta, arguments[0]);
     }
@@ -56,7 +56,7 @@ MoaLog.prototype.error = function(type){
   }
 }
 MoaLog.prototype.crit = function(type){
-  if(this.level >= MoaLog.LEVEL_CRIT){
+  if(this.level <= MoaLog.LEVEL_CRIT){
     if(arguments.length==1){
       console.log('crit'.red, arguments[0]);
     }
