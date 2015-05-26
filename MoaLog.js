@@ -15,6 +15,12 @@ MoaLog.LEVEL_INFO = 2;
 MoaLog.LEVEL_WARN = 3;
 MoaLog.LEVEL_ERROR = 4;
 MoaLog.LEVEL_CRIT = 5;
+MoaLog.L_ALL = 0;
+MoaLog.L_DEBUG = 1;
+MoaLog.L_INFO = 2;
+MoaLog.L_WARN = 3;
+MoaLog.L_ERROR = 4;
+MoaLog.L_CRIT = 5;
 MoaLog.prototype.setLevel = function(level){
   this.level = level;
 }
