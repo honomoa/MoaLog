@@ -1,6 +1,8 @@
 var colors = require('colors').enabled = true,
         fs = require('fs'),
-      util = require('util');
+      util = require('util'),
+      path = require('path'),
+    appDir = path.dirname(require.main.filename);
 
 module.exports = MoaLog;
 
@@ -51,7 +53,7 @@ MoaLog.prototype.console = function(type){
   console.log.apply(this, Array.prototype.slice.call(arguments, 0));
 }
 MoaLog.prototype.file = function(name, msg){
-  fs.writeFileSync(__dirname+'/'+name, msg);
+  fs.writeFileSync(appDir+'/'+name, msg);
 }
 MoaLog.prototype.inspect = function(object){
   console.log(util.inspect(object, { showHidden: true, depth: null }))
