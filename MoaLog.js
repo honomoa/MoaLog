@@ -59,7 +59,7 @@ MoaLog.prototype.console = function(type){
   console.log.apply(this, Array.prototype.slice.call(arguments, 0));
 }
 MoaLog.prototype.file = function(name, msg){
-  fs.writeFileSync(appDir+'/'+name, msg, {flag: 'a+'});
+  fs.writeFileSync(appDir+'/'+name, msg+"\n", {flag: 'a+'});
 }
 MoaLog.prototype.inspect = function(object){
   console.log(util.inspect(object, { showHidden: true, depth: null }))
