@@ -1,3 +1,5 @@
-var MoaLog = require('./MoaLog');
+'use strict';
+
+const MoaLog = require('./lib/MoaLog');
 
 module.exports = new MoaLog();
