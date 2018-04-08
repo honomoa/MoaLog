@@ -1,6 +1,6 @@
 {
   "name": "MoaLog",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "author": {
     "name": "Moa Chung"
@@ -8,15 +8,19 @@
   "homepage": "https://github.com/honomoa/MoaLog/",
   "keywords": [
     "moa",
-    "log"
+    "log",
+    "loggger",
+    "debug",
+    "chalk"
   ],
   "repository": {
     "type": "git",
     "url": "http://github.com/honomoa/MoaLog.git"
   },
   "dependencies": {
-    "colors": "^1.1.2",
-    "lodash": "^4.17.4"
+    "chalk": "^2.3.2",
+    "lodash": "^4.17.5",
+    "moment": "^2.22.0"
   },
   "main": "index.js",
   "scripts": {
