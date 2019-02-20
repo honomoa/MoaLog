@@ -18,9 +18,9 @@
     "url": "http://github.com/honomoa/MoaLog.git"
   },
   "dependencies": {
-    "chalk": "^2.3.2",
-    "lodash": "^4.17.5",
-    "moment": "^2.22.0"
+    "chalk": "^2.4.2",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0"
   },
   "main": "index.js",
   "scripts": {
