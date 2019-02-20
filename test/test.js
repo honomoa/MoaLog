@@ -3,7 +3,7 @@
 const MoaLog = require('../index');
 
 MoaLog.log('set level = 0(L_ALL)');
-MoaLog.setLevel(0);
+MoaLog.setLevel(MoaLog.L_ALL);
 MoaLog.all('MoaLog.all');
 MoaLog.debug('MoaLog.debug');
 MoaLog.info('MoaLog.info');
@@ -14,7 +14,7 @@ MoaLog.crit('MoaLog.crit');
 MoaLog.log('-------------------------------------------');
 
 MoaLog.log('set level = 1(L_DEBUG)');
-MoaLog.setLevel(1);
+MoaLog.setLevel(MoaLog.L_DEBUG);
 MoaLog.all('MoaLog.all');
 MoaLog.debug('MoaLog.debug');
 MoaLog.info('MoaLog.info');
@@ -25,7 +25,7 @@ MoaLog.crit('MoaLog.crit');
 MoaLog.log('-------------------------------------------');
 
 MoaLog.log('set level = 2(L_INFO)');
-MoaLog.setLevel(2);
+MoaLog.setLevel(MoaLog.L_INFO);
 MoaLog.all('MoaLog.all');
 MoaLog.debug('MoaLog.debug');
 MoaLog.info('MoaLog.info');
@@ -36,7 +36,7 @@ MoaLog.crit('MoaLog.crit');
 MoaLog.log('-------------------------------------------');
 
 MoaLog.log('set level = 3(L_WARN)');
-MoaLog.setLevel(3);
+MoaLog.setLevel(MoaLog.L_WARN);
 MoaLog.all('MoaLog.all');
 MoaLog.debug('MoaLog.debug');
 MoaLog.info('MoaLog.info');
@@ -47,7 +47,7 @@ MoaLog.crit('MoaLog.crit');
 MoaLog.log('-------------------------------------------');
 
 MoaLog.log('set level = 4(L_ERROR)');
-MoaLog.setLevel(4);
+MoaLog.setLevel(MoaLog.L_ERROR);
 MoaLog.all('MoaLog.all');
 MoaLog.debug('MoaLog.debug');
 MoaLog.info('MoaLog.info');
@@ -58,7 +58,7 @@ MoaLog.crit('MoaLog.crit');
 MoaLog.log('-------------------------------------------');
 
 MoaLog.log('set level = 5(L_CRIT)');
-MoaLog.setLevel(5);
+MoaLog.setLevel(MoaLog.L_CRIT);
 MoaLog.all('MoaLog.all');
 MoaLog.debug('MoaLog.debug');
 MoaLog.info('MoaLog.info');
